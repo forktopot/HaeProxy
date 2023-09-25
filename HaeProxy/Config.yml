@@ -1,0 +1,2129 @@
+rules:
+- rule:
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Shiro
+    regex: (=deleteMe|rememberMe=)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: JSON Web Token
+    regex: (ey[A-Za-z0-9_-]{10,}\.[A-Za-z0-9._-]{10,}|ey[A-Za-z0-9_\/+-]{10,}\.[A-Za-z0-9._\/+-]{10,})
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Swagger UI
+    regex: ((swagger-ui.html)|(\"swagger\":)|(Swagger UI)|(swaggerUi))
+    scope: response
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: ThinkAdmin
+    regex: (ThinkAdmin</title>)
+    scope: response
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 宝塔
+    regex: (app.bt.cn/static/app.png|安全入口校验失败|<title>入口校验失败</title>|href=\"http://www.bt.cn/bbs)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 深信服防火墙类产品
+    regex: (SANGFOR FW)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 360网站卫士
+    regex: (webscan.360.cn/status/pai/hash|wzws-waf-cgi|zhuji.360.cn/guard/firewall/stopattack.html)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 360网站卫士
+    regex: (360wzws|CWAP-waf|zhuji.360.cn|X-Safe-Firewall)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 绿盟防火墙
+    regex: (NSFOCUS NF)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 绿盟防火墙
+    regex: (NSFocus)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Topsec-Waf
+    regex: (<META NAME="Copyright" CONTENT="Topsec Network Security Technology Co.,Ltd"/>","<META
+      NAME="DESCRIPTION" CONTENT="Topsec web UI"/>)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Anquanbao
+    regex: (Anquanbao)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: BaiduYunjiasu
+    regex: (yunjiasu)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: BigIP
+    regex: (BigIP|BIGipServer|BIG-IP)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: BinarySEC
+    regex: (binarysec)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: BlockDoS
+    regex: (BlockDos.net)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: CloudFlare
+    regex: (cloudflare)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Cloudfront
+    regex: (cloudfront)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Comodo
+    regex: (Protected by COMODO)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: IBM-DataPower
+    regex: (X-Backside-Transport)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: DenyAll
+    regex: (sessioncookie=)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: dotDefender
+    regex: (dotDefender)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Incapsula
+    regex: (X-CDN|Incapsula)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Jiasule
+    regex: (jsluid=)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: KONA
+    regex: (AkamaiGHost)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: ModSecurity
+    regex: (Mod_Security|NOYB)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: NetContinuum
+    regex: (Cneonction|nnCoection|citrix_ns_id)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Newdefend
+    regex: (newdefend)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Safe3
+    regex: (Safe3WAF|Safe3 Web Firewall)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Safedog
+    regex: (404.safedog.cn/images/safedogsite/broswer_logo.jpg)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Safedog
+    regex: (Safedog|WAF/2.0)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: SonicWALL
+    regex: (SonicWALL)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Stingray
+    regex: (X-Mapping-)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Sucuri
+    regex: (Sucuri/Cloudproxy)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Usp-Sec
+    regex: (Secure Entry Server)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Varnish
+    regex: (varnish)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Wallarm
+    regex: (wallarm)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 阿里云
+    regex: (errors.aliyun.com)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: WebKnight
+    regex: (WebKnight)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Yundun
+    regex: (YUNDUN)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Yunsuo
+    regex: (yunsuo)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Coding pages
+    regex: (Coding Pages)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 启明防火墙"
+    regex: (/cgi-bin/webui?op=get_product_model)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Portainer(Docker管理)
+    regex: (portainer.updatePassword|portainer.init.admin)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Gogs简易Git服务
+    regex: (i_like_gogs)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Gitea简易Git服务
+    regex: (i_like_gitea)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Nexus
+    regex: (Nexus Repository Manager)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Nexus
+    regex: (NX-ANTI-CSRF-TOKEN)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Harbor
+    regex: (<title>Harbor</title>)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Harbor
+    regex: (harbor-lang)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 禅道
+    regex: (/theme/default/images/main/zt-logo.png)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 禅道
+    regex: (zentaosid)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 协众OA
+    regex: (Powered by 协众OA)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 协众OA
+    regex: (CNOAOASESSID)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: xxl-job
+    regex: (分布式任务调度平台XXL-JOB)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: atmail-WebMail
+    regex: (atmail6)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: atmail-WebMail
+    regex: (/index.php/mail/auth/processlogin|Powered by Atmail)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 致远OA
+    regex: (/seeyon/common/|/seeyon/USER-DATA/IMAGES/LOGIN/login.gif)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: discuz
+    regex: (content=\"Discuz! X\")
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Typecho
+    regex: (Typecho</a>)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 金蝶EAS
+    regex: (easSessionId)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: phpMyAdmin
+    regex: (pma_lang|phpMyAdmin)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: phpMyAdmin
+    regex: (/themes/pmahomme/img/logo_right.png)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: H3C-AM8000
+    regex: (AM8000)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 360企业版
+    regex: (360EntWebAdminMD5Secret)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: H3C公司产品
+    regex: (service@h3c.com)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: H3C ICG 1000
+    regex: (ICG 1000系统管理)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Citrix-Metaframe
+    regex: (window.location=\"/Citrix/MetaFrame)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: H3C ER5100
+    regex: (ER5100系统管理)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 阿里云CDN
+    regex: (cdn.aliyuncs.com)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: CISCO_EPC3925
+    regex: (Docsis_system)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: CISCO ASR
+    regex: (CISCO ASR)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: H3C ER3200
+    regex: (ER3200系统管理)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 万户ezOFFICE
+    regex: (LocLan)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 万户网络
+    regex: (css/css_whir.css)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Spark_Master
+    regex: (Spark Master at)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 华为_HUAWEI_SRG2220
+    regex: (HUAWEI SRG2220)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 蓝凌OA
+    regex: (/scripts/jquery.landray.common.js)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 深信服ssl-vpn
+    regex: (login_psw.csp)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 华为 NetOpen
+    regex: (/netopen/theme/css/inFrame.css)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Citrix-Web-PN-Server
+    regex: (Citrix Web PN Server)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: juniper_vpn
+    regex: (welcome.cgi?p=logo|/images/logo_juniper_reversed.gif)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 360主机卫士
+    regex: (zhuji.360.cn)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Nagios
+    regex: (Nagios Access)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: H3C ER8300
+    regex: (ER8300系统管理)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Citrix-Access-Gateway
+    regex: (Citrix Access Gateway)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 华为 MCU
+    regex: (McuR5-min.js)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: TP-LINK Wireless WDR3600
+    regex: (TP-LINK Wireless WDR3600)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 泛微OA
+    regex: (ecology_JSessionid)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 泛微OA
+    regex: (/spa/portal/public/index.js)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 华为_HUAWEI_ASG2050
+    regex: (HUAWEI ASG2050)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 360网站卫士
+    regex: (360wzb)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Citrix-XenServer
+    regex: (Citrix Systems, Inc. XenServer)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: H3C ER2100V2
+    regex: (ER2100V2系统管理)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: zabbix
+    regex: (zbx_sessionid)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: zabbix
+    regex: (images/general/zabbix.ico|Zabbix SIA)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: CISCO_VPN
+    regex: (webvpn)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 360站长平台
+    regex: (360-site-verification)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: H3C ER3108GW
+    regex: (ER3108GW系统管理)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: o2security_vpn
+    regex: (client_param=install_active)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: H3C ER3260G2
+    regex: (ER3260G2系统管理)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: H3C ICG1000
+    regex: (ICG1000系统管理)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: CISCO-CX20
+    regex: (CISCO-CX20)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: H3C ER5200
+    regex: (ER5200系统管理)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: linksys-vpn-bragap14-parintins
+    regex: (linksys-vpn-bragap14-parintins)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 360网站卫士常用前端公共库
+    regex: (libs.useso.com)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: H3C ER3100
+    regex: (ER3100系统管理)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: H3C-SecBlade-FireWall
+    regex: (js/MulPlatAPI.js)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 360webfacil_360WebManager
+    regex: (publico/template/)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Citrix_Netscaler
+    regex: (ns_af)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: H3C ER6300G2
+    regex: (ER6300G2系统管理)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: H3C ER3260
+    regex: (ER3260系统管理)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 华为_HUAWEI_SRG3250
+    regex: (HUAWEI SRG3250)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: exchange
+    regex: (/owa/auth.owa)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Spark_Worker
+    regex: (Spark Worker at)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: H3C ER3108G
+    regex: (ER3108G系统管理)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Citrix-ConfProxy
+    regex: (confproxy)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 360网站安全检测
+    regex: (webscan.360.cn/status/pai/hash)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: H3C ER5200G2
+    regex: (ER5200G2系统管理)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 华为（HUAWEI）安全设备
+    regex: (sweb-lib/resource/)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 华为（HUAWEI）USG
+    regex: (UI_component/commonDefine/UI_regex_define.js)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: H3C ER6300
+    regex: (ER6300系统管理)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 华为_HUAWEI_ASG2100
+    regex: (HUAWEI ASG2100)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: TP-Link 3600 DD-WRT
+    regex: (TP-Link 3600 DD-WRT)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: NETGEAR WNDR3600
+    regex: (NETGEAR WNDR3600)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: H3C ER2100
+    regex: (ER2100系统管理)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: jira
+    regex: (jira.webresources)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 金和协同管理平台
+    regex: (金和协同管理平台)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Citrix-NetScaler
+    regex: (NS-CACHE)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: linksys-vpn
+    regex: (linksys-vpn)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 通达OA
+    regex: (/static/images/tongda.ico|http://www.tongda2000.com|通达OA移动版)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 华为（HUAWEI）Secoway设备
+    regex: (Secoway)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 华为_HUAWEI_SRG1220
+    regex: (HUAWEI SRG1220)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: H3C ER2100n
+    regex: (ER2100n系统管理)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: H3C ER8300G2
+    regex: (ER8300G2系统管理)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 金蝶政务GSiS
+    regex: (/kdgs/script/kdgs.js)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Jboss
+    regex: (Welcome to JBoss|jboss.css)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Jboss
+    regex: (JBoss)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 泛微E-mobile
+    regex: (Weaver E-mobile|weaver,e-mobile)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 泛微E-mobile
+    regex: (EMobileServer)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 齐治堡垒机
+    regex: (logo-icon-ico72.png|resources/themes/images/logo-login.png)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: ThinkPHP
+    regex: (ThinkPHP)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: ThinkPHP
+    regex: (/Public/static/js/)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: weaver-ebridge
+    regex: (e-Bridge,http://wx.weaver)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Laravel
+    regex: (laravel_session)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: DWR
+    regex: (dwr/engine.js)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: swagger_ui
+    regex: (swagger-ui/css|\"swagger\":|swagger-ui.min.js)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 大汉版通发布系统
+    regex: (大汉版通发布系统|大汉网络)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: druid
+    regex: (druid.index|DruidDrivers|DruidVersion|Druid Stat Index)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Jenkins
+    regex: (Jenkins)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 红帆OA
+    regex: (iOffice)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: VMware vSphere
+    regex: (VMware vSphere)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 打印机
+    regex: (打印机|media/canon.gif)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: finereport
+    regex: (isSupportForgetPwd|FineReport,Web Reporting Tool)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 蓝凌OA
+    regex: (蓝凌软件|StylePath:\"/resource/style/default/\"|/resource/customization)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: GitLab
+    regex: (href=\"https://about.gitlab.com/)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 用友
+    regex: (YONYOU NC | /Client/Uclient/UClient.dmg|iufo/web/css/menu.css|/System/Login/Login.asp?AppID=|/nc/servlet/nc.ui.iufo.login.Index)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Jquery-1.7.2
+    regex: (/webui/js/jquerylib/jquery-1.7.2.min.js)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Hadoop Applications
+    regex: (/cluster/app/application)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 海昌OA
+    regex: (/loginmain4/js/jquery.min.js)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 帆软报表
+    regex: (WebReport/login.html|ReportServer)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 帆软报表
+    regex: (数据决策系统)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 华夏ERP
+    regex: (华夏ERP)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 金和OA
+    regex: (ASPSESSIONIDSSCDTDBS)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 久其财务报表
+    regex: (netrep/login.jsp|/netrep/intf)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 若依管理系统
+    regex: (ruoyi/login.js|ruoyi/js/ry-ui.js)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 启莱OA
+    regex: (js/jQselect.js|js/jquery-1.4.2.min.js)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 智慧校园管理系统
+    regex: (DC_Login/QYSignUp)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: JQuery-1.7.2
+    regex: (webui/js/jquerylib/jquery-1.7.2.min.js)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 浪潮 ClusterEngineV4.0
+    regex: (0;url=module/login/login.html)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 会捷通云视讯平台
+    regex: (him/api/rest/v1.0/node/role|him.app)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 源码泄露账号密码 F12查看
+    regex: (get_dkey_passwd)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Smartbi Insight
+    regex: (smartbi.gcf.gcfutil)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 汉王人脸考勤管理系统
+    regex: (汉王人脸考勤管理系统|/Content/image/hanvan.png|/Content/image/hvicon.ico)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 亿赛通-电子文档安全管理系统
+    regex: (电子文档安全管理系统|/CDGServer3/index.jsp|/CDGServer3/SysConfig.jsp|/CDGServer3/help/getEditionInfo.jsp)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 天融信 TopApp-LB 负载均衡系统
+    regex: (TopApp-LB 负载均衡系统)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 中新金盾信息安全管理系统
+    regex: (中新金盾信息安全管理系统|中新网络信息安全股份有限公司)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 好视通
+    regex: (深圳银澎云计算有限公司|itunes.apple.com/us/app/id549407870|hao-shi-tong-yun-hui-yi-yuan)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 蓝海卓越计费管理系统
+    regex: (蓝海卓越计费管理系统|星锐蓝海网络科技有限公司)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 和信创天云桌面系统
+    regex: (和信下一代云桌面VENGD|/vesystem/index.php)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 金山
+    regex: (北京猎鹰安全科技有限公司|金山终端安全系统V9.0Web控制台|北京金山安全管理系统技术有限公司|金山V8)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: WIFISKY-7层流控路由器
+    regex: (深圳市领空技术有限公司|WIFISKY 7层流控路由器)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: MetInfo-米拓建站
+    regex: (MetInfo|/skin/style/metinfo.css|/skin/style/metinfo-v2.css)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: IBM-Lotus-Domino
+    regex: (/mailjump.nsf|/domcfg.nsf|/names.nsf|/homepage.nsf)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: APACHE-kylin
+    regex: (url=kylin)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: C-Lodop打印服务系统
+    regex: (/CLodopfuncs.js|www.c-lodop.com)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: ATLASSIAN-Confluence
+    regex: (Atlassian Confluence)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: HFS
+    regex: (href=\"http://www.rejetto.com/hfs/)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Jellyfin
+    regex: (content=\"http://jellyfin.org\")
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: FIT2CLOUD-JumpServer-堡垒机
+    regex: (<title>JumpServer</title>)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Alibaba Nacos
+    regex: (<title>Nacos</title>)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Nagios
+    regex: (nagios admin)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Pulse Connect Secure
+    regex: (/dana-na/imgs/space.gif)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: h5ai
+    regex: (powered by h5ai)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: jeesite
+    regex: (jeesite.session.id)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 拓尔思SSO
+    regex: (trsidsssosessionid)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 拓尔思WCMv7/6
+    regex: (com.trs.idm.coSessionId)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 天融信脆弱性扫描与管理系统
+    regex: (/js/report/horizontalReportPanel.js)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 天融信网络审计系统
+    regex: (onclick=dlg_download())
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 天融信日志收集与分析系统
+    regex: (天融信日志收集与分析系统)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: URP教务系统
+    regex: (北京清元优软科技有限公司)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 科来RAS
+    regex: (科来软件 版权所有|i18ninit.min.js)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 正方OA
+    regex: (zfoausername)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 希尔OA
+    regex: (/heeroa/login.do)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 泛普建筑工程施工OA
+    regex: (/dwr/interface/LoginService.js)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 中望OA
+    regex: (/IMAGES/default/first/xtoa_logo.png|/app_qjuserinfo/qjuserinfoadd.jsp)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 海天OA
+    regex: (HTVOS.js)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 信达OA
+    regex: (http://www.xdoa.cn</a>)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 任我行CRM
+    regex: (CRM_LASTLOGINUSERKEY)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Spammark邮件信息安全网关
+    regex: (/cgi-bin/spammark?empty=1)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: winwebmail
+    regex: (WinWebMail Server|images/owin.css)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 浪潮政务系统
+    regex: (LangChao.ECGAP.OutPortal|OnlineQuery/QueryList.aspx)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 天融信防火墙
+    regex: (/cgi/maincgi.cgi)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 网神防火墙
+    regex: (css/lsec/login.css)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 帕拉迪统一安全管理和综合审计系统
+    regex: (module/image/pldsec.css)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 蓝盾BDWebGuard
+    regex: (url(images/loginbg.jpg) \#e5f1fc)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Huawei SMC
+    regex: (Script/SmcScript.js?version=)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: coremail
+    regex: (/coremail/bundle/|contextRoot)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: activemq
+    regex: (activemq_logo|Manage ActiveMQ broker)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 锐捷网络
+    regex: (static/img/title.ico|support.ruijie.com.cn|Ruijie - NBR|eg.login.loginBtn)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 禅道
+    regex: (/theme/default/images/main/zt-logo.png|zentaosid)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: weblogic
+    regex: (/console/framework/skins/wlsconsole/images/login_WebLogic_branding.png|Welcome
+      to Weblogic Application Server|<i>Hypertext Transfer Protocol -- HTTP/1.1</i>|<TITLE>Error
+      404--Not Found</TITLE>|Welcome to Weblogic Application Server|<title>Oracle
+      WebLogic Server 管理控制台</title>)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: weblogic
+    regex: (WebLogic)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 致远OA
+    regex: (/seeyon/USER-DATA/IMAGES/LOGIN/login.gif|/seeyon/common/)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 蓝凌EIS智慧协同平台
+    regex: (/scripts/jquery.landray.common.js)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 深信服ssl-vpn
+    regex: (login_psw.csp|loginPageSP/loginPrivacy.js|/por/login_psw.csp)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Struts2
+    regex: (org.apache.struts2|Struts Problem Report|struts.devMode|struts-tags|There
+      is no Action mapped for namespace)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 泛微OA
+    regex: (/spa/portal/public/index.js|wui/theme/ecology8/page/images/login/username_wev8.png|/wui/index.html#/?logintype=1)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Swagger UI
+    regex: (/swagger-ui.css|swagger-ui-bundle.js|swagger-ui-standalone-preset.js)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 金蝶政务GSiS
+    regex: (/kdgs/script/kdgs.js|HTML5/content/themes/kdcss.min.css|/ClientBin/Kingdee.BOS.XPF.App.xap)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 蓝凌OA
+    regex: (蓝凌软件|StylePath:\"/resource/style/default/\"|/resource/customization|sys/ui/extend/theme/default/style/icon.css|sys/ui/extend/theme/default/style/profile.css)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 用友NC
+    regex: (YONYOU NC | /Client/Uclient/UClient.dmg)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 用友IUFO
+    regex: (iufo/web/css/menu.css)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: TELEPORT堡垒机
+    regex: (/static/plugins/blur/background-blur.js)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: JEECMS
+    regex: (/r/cms/www/red/js/common.js|/r/cms/www/red/js/indexshow.js|Powered by
+      JEECMS|JEECMS|/jeeadmin/jeecms/index.do)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: CMS
+    regex: (Powered by .*CMS)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: editor
+    regex: (editor)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: ATLASSIAN-Confluence
+    regex: (confluence.)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Apache XML-RPC
+    regex: (XML-RPC)
+    scope: response header
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 用友nccloud
+    regex: (/nccloud/)
+    scope: response
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Apache Axis
+    regex: (axis2-web/css/axis-style.css)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: TongWeb
+    regex: (TongWeb)
+    scope: response header
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: JeecgBoot
+    regex: (/cdn/babel-polyfill/polyfill_)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Smartbi
+    regex: (vision/index.jsp)
+    scope: response header
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 拓尔思-was
+    regex: (/was40/search)
+    scope: any
+    sensitive: true
+  - color: green
+    engine: nfa
+    loaded: true
+    name: 拓尔思-ids
+    regex: (/ids/admin/abc.code?random=)
+    scope: any
+    sensitive: true
+  type: Fingerprint
+- rule:
+  - color: yellow
+    engine: nfa
+    loaded: true
+    name: Email
+    regex: (([a-zA-Z0-9][_|\.])*[a-zA-Z0-9]+@([a-zA-Z0-9][-|_|\.])*[a-zA-Z0-9]+\.((?!js|css|jpg|jpeg|png|ico)[a-zA-Z]{2,}))
+    scope: response body
+    sensitive: null
+  - color: orange
+    engine: nfa
+    loaded: true
+    name: Chinese IDCard
+    regex: '[^0-9]((\d{8}(0\d|10|11|12)([0-2]\d|30|31)\d{3}$)|(\d{6}(18|19|20)\d{2}(0[1-9]|10|11|12)([0-2]\d|30|31)\d{3}(\d|X|x)))[^0-9]'
+    scope: response body
+    sensitive: null
+  - color: orange
+    engine: nfa
+    loaded: true
+    name: Chinese Mobile Number
+    regex: '[^0-9A-Za-z](1(3([0-35-9]\d|4[1-8])|4[14-9]\d|5([\d]\d|7[1-79])|66\d|7[2-35-8]\d|8\d{2}|9[89]\d)\d{7})[^0-9A-Za-z]'
+    scope: response body
+    sensitive: null
+  - color: cyan
+    engine: nfa
+    loaded: true
+    name: Internal IP Address
+    regex: '[^0-9]((127\.0\.0\.1)|(localhost)|(10\.\d{1,3}\.\d{1,3}\.\d{1,3})|(172\.((1[6-9])|(2\d)|(3[01]))\.\d{1,3}\.\d{1,3})|(192\.168\.\d{1,3}\.\d{1,3}))'
+    scope: response
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: false
+    name: MAC Address
+    regex: (^([a-fA-F0-9]{2}(:[a-fA-F0-9]{2}){5})|[^a-zA-Z0-9]([a-fA-F0-9]{2}(:[a-fA-F0-9]{2}){5}))
+    scope: response
+    sensitive: null
+  - color: orange
+    engine: nfa
+    loaded: true
+    name: Chinese Bank Card ID
+    regex: '[^0-9]([1-9]\d{12,18})[^0-9]'
+    scope: response
+    sensitive: null
+  type: Basic Information
+- rule:
+  - color: cyan
+    engine: dfa
+    loaded: true
+    name: RCE Paramters
+    regex: ((cmd=)|(exec=)|(command=)|(execute=)|(ping=)|(query=)|(jump=)|(code=)|(reg=)|(do=)|(func=)|(arg=)|(option=)|(load=)|(process=)|(step=)|(read=)|(function=)|(feature=)|(exe=)|(module=)|(payload=)|(run=)|(daemon=)|(upload=)|(dir=)|(download=)|(log=)|(ip=)|(cli=))
+    scope: request
+    sensitive: null
+  - color: yellow
+    engine: nfa
+    loaded: true
+    name: Java Deserialization
+    regex: (javax.faces.ViewState)
+    scope: any
+    sensitive: true
+  - color: cyan
+    engine: dfa
+    loaded: true
+    name: Debug Logic Parameters
+    regex: ((access=)|(adm=)|(admin=)|(alter=)|(cfg=)|(clone=)|(config=)|(create=)|(dbg=)|(debug=)|(delete=)|(disable=)|(edit=)|(enable=)|(exec=)|(execute=)|(grant=)|(load=)|(make=)|(modify=)|(rename=)|(reset=)|(root=)|(shell=)|(test=)|(toggl=))
+    scope: request
+    sensitive: null
+  - color: cyan
+    engine: nfa
+    loaded: true
+    name: URL As A Value
+    regex: (=(https?://.*|https?%3(a|A)%2(f|F)%2(f|F).*))
+    scope: request
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: .net 反序列化
+    regex: (_VIEWSTATE)
+    scope: any
+    sensitive: true
+  type: Maybe Vulnerability
+- rule:
+  - color: green
+    engine: dfa
+    loaded: true
+    name: OSS
+    regex: ([A|a]ccess[K|k]ey[I|i][d|D]|[A|a]ccess[K|k]ey[S|s]ecret)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Amazon AWS URL
+    regex: (((([a-zA-Z0-9._-]+\.s3|s3)(\.|\-)+[a-zA-Z0-9._-]+|[a-zA-Z0-9._-]+\.s3|s3)\.amazonaws\.com)|(s3:\/\/[a-zA-Z0-9-\.\_]+)|(s3.console.aws.amazon.com\/s3\/buckets\/[a-zA-Z0-9-\.\_]+)|(amzn\.mws\.[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})|(ec2-[0-9-]+.cd-[a-z0-9-]+.compute.amazonaws.com)|(us[_-]?east[_-]?1[_-]?elb[_-]?amazonaws[_-]?com))
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Amazon AWS AccessKey ID
+    regex: ((aws(.{0,20})?(?-i)['\"][0-9a-zA-Z\/+]{40}['\"])|((A3T[A-Z0-9]|AKIA|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[a-zA-Z0-9]{16}))
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Amazon AWS Region
+    regex: ((us(-gov)?|ap|ca|cn|eu|sa)-(central|(north|south)?(east|west)?)-\d)
+    scope: any
+    sensitive: null
+  - color: yellow
+    engine: nfa
+    loaded: true
+    name: SSH Private Key
+    regex: ([-]+BEGIN [^\s]+ PRIVATE KEY[-])
+    scope: response
+    sensitive: false
+  - color: green
+    engine: nfa
+    loaded: true
+    name: facebook access token
+    regex: (EAACEdEose0cBA[0-9A-Za-z]+)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: cloudinary-credentials
+    regex: (cloudinary://[0-9]+:[A-Za-z0-9_.-]+@[A-Za-z0-9_.-]+)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: square_oauth_secret
+    regex: (sq0csp-[ 0-9A-Za-z_-]{43}|sq0[a-z]{3}-[0-9A-Za-z_-]{22,43})
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: square_access_token
+    regex: (sqOatp-[0-9A-Za-z_-]{22}|EAAA[a-zA-Z0-9]{60})
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: json_web_token
+    regex: (ey[A-Za-z0-9_=-]+.[A-Za-z0-9_=-]+\.?[A-Za-z0-9_.+/=-]*$)
+    scope: any
+    sensitive: false
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Heroku API KEY
+    regex: ([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12})
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: twilio_api_key
+    regex: (SK[0-9a-fA-F]{32})
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: twilio_account_sid
+    regex: (AC[a-zA-Z0-9_-]{32})
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: twilio_app_sid
+    regex: (AP[a-zA-Z0-9_-]{32})
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: mailgun_api_key
+    regex: (key-[0-9a-zA-Z]{32})
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Microsoft Teams Webhook
+    regex: (https://outlook\.office\.com/webhook/[A-Za-z0-9@-]+/IncomingWebhook/[A-Za-z0-9-]+/[A-Za-z0-9-]+)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Discord webhook
+    regex: (https://discordapp\.com/api/webhooks/[0-9]+/[A-Za-z0-9-]+)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Zapier Webhook Token
+    regex: (https://(?:www.)?hooks\.zapier\.com/hooks/catch/[A-Za-z0-9]+/[A-Za-z0-9]+/)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Zoho Webhook
+    regex: (https://creator\.zoho\.com/api/[A-Za-z0-9/_.-]+\?authtoken=[A-Za-z0-9]+)'
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Authorization Basic
+    regex: (basic [a-zA-Z0-9=:_\+\/-]{5,100})
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Authorization Bearer
+    regex: (bearer [a-zA-Z0-9_.=:_\+\/-]{5,100})
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: authorization_api
+    regex: (api[key|_key|\s+]+[a-zA-Z0-9_-]{5,100})
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: bitly-secret-key
+    regex: (R_[0-9a-f]{32})
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: sendgrid-api-key
+    regex: (SG\.[a-zA-Z0-9_-]{22}\.[a-zA-Z0-9_-]{43})
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: sonarqube-token
+    regex: (sonar.{0,50}(?:"|\'|`)?[0-9a-f]{40}(?:"|\'|`)?)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: artifactory-api-token
+    regex: ((?:\s|=|:|"|^)AKC[a-zA-Z0-9]{10,})
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: artifactory-api-password
+    regex: ((?:\s|=|:|"|^)AP[\dABCDEF][a-zA-Z0-9]{8,})
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Slack Bot
+    regex: (xoxb-[0-9A-Za-z\\-]{51})
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Slack user
+    regex: (xoxp-[0-9A-Za-z\\-]{72})
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Slack Webhook
+    regex: (https://hooks\\.slack\\.com/services/T[a-zA-Z0-9_]{8}/B[a-zA-Z0-9_]{8}/[a-zA-Z0-9_]{24})
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: github_access_token
+    regex: ([a-zA-Z0-9_-]*:[a-zA-Z0-9_\-]+@github\.com*)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: General Token
+    regex: ((?:K|k)ey(?:up|down|press))|((T|t)(O|o)(K|k)(E|e)(N|n)[\-|_|A-Za-z0-9]*(\'|")?(
+      )*(:|=)+()*(\'|")?[ 0-9A-Za-z_-]+(\'|")?)|((A|a)(P|p)(Ii)[\-|_|A-Za-z0-9]*(\'|")?(
+      )*(:|=)( )*(\'|")?[0-9A-Za-z_-]+(\'|")?)|((K|k)(E|e)(Y|y)[\-|_|A-Za-z0-9]*(\'|")?(
+      )*(:|=)( )*(\'|")?[0-9A-Za-z_-]+(\'|")?)|(eyJ[a-zA-Z0-9]{10,}\.eyJ[a-zA-Z0-9]{10,}\.[a-zA-Z0-9_-]{10,})
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Stripe Secret Key
+    regex: ([prs]k_(?:live|test)_[0-9a-zA-Z]{24})
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: google-api-key
+    regex: (AIza[0-9A-Za-z_\\-]{35})
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: jdbc-connection-string
+    regex: (jdbc:[a-z:]+://[A-Za-z0-9\.\-_:;=/@?,&]+)
+    scope: any
+    sensitive: false
+  - color: green
+    engine: nfa
+    loaded: true
+    name: credentials-disclosure
+    regex: (zopim[_-]?account[_-]?key(=| =|:| :))
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Zhuliang Token
+    regex: (zhuliang[_-]?gh[_-]?token(=| =|:| :))
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Zensona
+    regex: (zensonatypepassword(=| =|:| :))
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Picatic-api-key
+    regex: (sk_live_[0-9a-z]{32})
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: oauth-access-key
+    regex: (ya29\.[0-9A-Za-z_-]+)
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Firebase-server-key
+    regex: (AAAA[a-zA-Z0-9_-]{7}:[a-zA-Z0-9_-]{140})
+    scope: any
+    sensitive: null
+  - color: green
+    engine: nfa
+    loaded: true
+    name: Braintree-access-token
+    regex: (access_token\$production\$[0-9a-z]{16}\$[0-9a-f]{32})
+    scope: any
+    sensitive: null
+  type: Sensitive Information
+- rule:
+  - color: gray
+    engine: nfa
+    loaded: false
+    name: New Name
+    regex: (New Regex)
+    scope: any
+    sensitive: false
+  type: New 0
+- rule:
+  - color: gray
+    engine: nfa
+    loaded: false
+    name: Linkfinder
+    regex: (?:"|')(((?:[a-zA-Z]{1,10}://|//)[^"'/]{1,}\.[a-zA-Z]{2,}[^"']{0,})|((?:/|\.\./|\./)[^"'><,;|*()(%%$^/\\\[\]][^"'><,;|()]{1,})|([a-zA-Z0-9_\-/]{1,}/[a-zA-Z0-9_\-/]{1,}\.(?:[a-zA-Z]{1,4}|action)(?:[\?|#][^"|']{0,}|))|([a-zA-Z0-9_\-/]{1,}/[a-zA-Z0-9_\-/]{3,}(?:[\?|#][^"|']{0,}|))|([a-zA-Z0-9_\-]{1,}\.(?:php|asp|aspx|jsp|json|action|html|js|txt|xml)(?:[\?|#][^"|']{0,}|)))(?:"|')
+    scope: any
+    sensitive: null
+  type: Other
