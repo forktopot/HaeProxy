@@ -28,7 +28,6 @@ type Data struct {
 func NewScan() *finger.Config {
 
 	err := finger.LoadWebfingerprint("./" + "/finger.json")
-	//err := finger.LoadWebfingerprint("/Users/callc/tools/InformationGathering/EHole-main/finger.json")
 	if err != nil {
 		color.RGBStyleFromString("237,64,35").Println("[error] fingerprint file error!!!")
 		os.Exit(1)
